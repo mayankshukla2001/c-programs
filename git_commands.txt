@@ -1,0 +1,105 @@
+1.  cd use to go in any folder.
+2.  cd .. is to go back in folder.
+3.  dir is use to check a file in directory.
+
+C:\Users\Priyanka>cd desktop
+
+C:\Users\Priyanka\Desktop>cd "git programs"
+
+C:\Users\Priyanka\Desktop\git programs>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 18FD-4A8B
+
+ Directory of C:\Users\Priyanka\Desktop\git programs
+
+19-02-2021  10:57 AM    <DIR>          .
+19-02-2021  10:57 AM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  16,502,534,144 bytes free
+
+4.  git clone is use to get folder in the computer which is deleted.
+
+C:\Users\Priyanka\Desktop\git programs>git clone https://github.com/mayankshukla2001/c-programs.git
+Cloning into 'c-programs'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+C:\Users\Priyanka\Desktop\git programs>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 18FD-4A8B
+
+ Directory of C:\Users\Priyanka\Desktop\git programs
+
+19-02-2021  11:00 AM    <DIR>          .
+19-02-2021  11:00 AM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  16,501,100,544 bytes free
+
+C:\Users\Priyanka\Desktop\git programs>gh repo clone mayankshukla2001/c-programs
+Welcome to GitHub CLI!
+
+To authenticate, please run `gh auth login`.
+
+C:\Users\Priyanka\Desktop\git programs>gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: 7595-0C98
+- Press Enter to open github.com in your browser...
+? Authentication complete. Press Enter to continue...
+
+- gh config set -h github.com git_protocol https
+? Configured git protocol
+? Logged in as mayankshukla2001
+
+5.  go to the website and copy the git cli.(second methode to clone )
+
+C:\Users\Priyanka\Desktop\git programs>gh repo clone mayankshukla2001/c-programs
+Cloning into 'c-programs'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+to add in a git
+{
+ Directory of C:\Users\Priyanka\Desktop\git programs\c-programs
+
+19-02-2021  11:07 AM    <DIR>          .
+19-02-2021  11:07 AM    <DIR>          ..
+19-02-2021  11:04 AM               380 biggest_3_no.c
+02-02-2021  02:54 PM               329 check_leapyear.c
+               2 File(s)            709 bytes
+               2 Dir(s)  16,501,268,480 bytes free
+
+6.  (git add file name) is used to add file in git 
+
+C:\Users\Priyanka\Desktop\git programs\c-programs>git add check_leapyear.c
+
+7.  (git commit -m "tittle") is used to commit file 
+
+C:\Users\Priyanka\Desktop\git programs\c-programs>git commit -m "check leap year"
+[master 2605cea] check leap year
+ 1 file changed, 18 insertions(+)
+ create mode 100644 check_leapyear.c
+
+8. (git push) is used to finally push your file in git hub.
+
+C:\Users\Priyanka\Desktop\git programs\c-programs>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 444 bytes | 74.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mayankshukla2001/c-programs.git
+   3e8677c..2605cea  master -> master
+
+C:\Users\Priyanka\Desktop\git programs\c-programs>
+}
